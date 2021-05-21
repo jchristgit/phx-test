@@ -15,7 +15,7 @@ defmodule TestWeb.Router do
 
   scope "/", TestWeb do
     pipe_through :browser
-    pipe_through TestWeb.RequireLogin
+    # pipe_through TestWeb.RequireLogin
 
     get "/", PageController, :index
     resources "/something", SomethingController
